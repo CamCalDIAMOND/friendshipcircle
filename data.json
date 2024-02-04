@@ -1,0 +1,18 @@
+{
+    "Jess": {
+        "points": 10,
+        "points_to_give": 50
+    },
+    "Logan": {
+        "points": 8,
+        "points_to_give": 50
+    },
+    "Camden": {
+        "points": 12,
+        "points_to_give": 50
+    },
+    "Lily": {
+        "points": 12,
+        "points_to_give": 50
+    }
+}
