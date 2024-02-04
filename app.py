@@ -1,12 +1,6 @@
 import json
 from flask import Flask, request, render_template
 
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return render_template('index.html')
-
 startingPoints = 1000
 
 
@@ -25,3 +19,15 @@ json_string = json.dumps(people,indent=4)
 
 with open(file_path, 'w') as json_file:
    json_file.write(json_string)
+
+
+#Spin Up Flask Server
+#Anything before the site should be up needs to be before this
+   
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+#End of Flask Server
