@@ -1,17 +1,19 @@
 import json
 from flask import Flask, request, render_template
 
-startingPoints = 1000
+startingPoints = 50
 
 
-people = {   
-   "jess": startingPoints,
-   "lily": startingPoints,
-   "logan": startingPoints,
-   "camden": startingPoints
+people = {
+    "Jess": {"points": 10, "points_to_give": startingPoints},
+    "Logan": {"points": 8, "points_to_give": startingPoints},
+    "Camden": {"points": 12, "points_to_give": startingPoints},
+    "Lily": {"points": 12, "points_to_give": startingPoints}
+    # Add more people as needed
 }
 
-people["camden"] = people["camden"] + 10
+
+#people["Camden"] = people["camden"] + 10
 
 
 file_path = "./data.json"
